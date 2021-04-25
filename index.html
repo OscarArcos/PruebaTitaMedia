@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Tita Media</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body onload="changeView('realsize')">
+    <!-- Menu de navegacion -->
+    <header>
+      <nav class="menu">
+        <img src="./assets/img/logo.png" alt="" class="menu__logo" />
+        <img src="./assets/img/logosamll.png" alt="" class="menu__logoSmall" />
+        <div class="menu__navegacion">
+          <img
+            class="menu__icon"
+            src="./assets/icons/menupink.png"
+            alt=""
+            onclick="showMenu()"
+          />
+          <div class="menu__navegacion-lista">
+            <ul>
+              <li id="all" onclick="goToPortfolio('All')"><p>All</p></li>
+              <li id="branding" onclick="goToPortfolio('Branding')">
+                <p>Branding</p>
+              </li>
+              <li id="web" onclick="goToPortfolio('Web')"><p>Web</p></li>
+              <li id="photo" onclick="goToPortfolio('Photography')">
+                <p>Photography</p>
+              </li>
+              <li id="app" onclick="goToPortfolio('App')"><p>App</p></li>
+            </ul>
+          </div>
+          <img
+            src="/assets/icons/save.png"
+            alt="save"
+            class="menu__navegacion-icono"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Menu de navegacion -->
+    <!-- Main Section -->
+    <section class="mainSection">
+      <img
+        src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+        alt=""
+      />
+      <h1 class="mainSection__title">EXPLORE BEYOND HORIZON</h1>
+      <p class="mainSection__slogan">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        dolores facilis iusto quas dignissimos magni.
+      </p>
+      <a href="#portfolio" class="mainSection__button">VIEW OUR WORK</a>
+    </section>
+    <!-- Fin Main Section -->
+    <!-- portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__typeView">
+        <img
+          src="/assets/icons/realSize.png"
+          alt="realSize"
+          class="portfolio__typeView-icons"
+          onclick="changeView(viewType = 'realsize')"
+        />
+        <img
+          src="/assets/icons/mosaic.png"
+          alt="mosaic"
+          class="portfolio__typeView-icons"
+          onclick="changeView(viewType = 'mosaic')"
+        />
+      </div>
+      <div class="portfolio__menu">
+        <ul>
+          <li id="all2" onclick="goToPortfolio('All')"><p>All</p></li>
+          <li id="branding2" onclick="goToPortfolio('Branding')">
+            <p>Branding</p>
+          </li>
+          <li id="web2" onclick="goToPortfolio('Web')"><p>Web</p></li>
+          <li id="photo2" onclick="goToPortfolio('Photography')">
+            <p>Photography</p>
+          </li>
+          <li id="app2" onclick="goToPortfolio('App')"><p>App</p></li>
+        </ul>
+      </div>
+      <div class="portfolio__container"></div>
+      <div class="portfolio__showMoreLess">
+        <button id="showMore" class="portfolio__button">Show Me More</button>
+        <button id="showLess" class="portfolio__button">Show Me Less</button>
+      </div>
+    </section>
+    <!-- Fin Main Section -->
+    <!-- footer Section -->
+    <footer class="footer">
+      <div class="footer__right">
+        <img src="./assets/icons/derechos-de-autor.png" alt="derechos" />
+        <p>2016 <span>Sneak</span> All Right Reserved</p>
+      </div>
+      <div class="footer__social">
+        <img src="./assets/icons/facebook.png" alt="" />
+        <img src="./assets/icons/twitter.png" alt="" />
+        <img src="./assets/icons/logotipo-de-instagram.png" alt="" />
+        <img src="./assets/icons/google-plus-logo.png" alt="" />
+        <img src="./assets/icons/youtube-logotype.png" alt="" />
+      </div>
+    </footer>
+    <!-- Fin Footer Section -->
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
